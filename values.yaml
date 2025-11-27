@@ -1,0 +1,16 @@
+replicaCount: 2
+
+image:
+  nginx: "nginx:alpine"
+  gitSync: "registry.k8s.io/git-sync/git-sync:v4.1.0"
+
+gitSync:
+  repo: "https://github.com/YOUR/REPO.git"
+  branch: "main"
+  wait: 30
+
+service:
+  type: ClusterIP
+  port: 80
+
+contentVersion: "v1"
