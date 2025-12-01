@@ -37,7 +37,7 @@ No need to modify manifests or rebuild images.
 ---
 
 ## 🧩 Architecture
-
+```
 ┌──────────────┐
 │ Git Repo │
 └──────┬───────┘
@@ -52,7 +52,7 @@ No need to modify manifests or rebuild images.
 ┌────────────┐
 │ Nginx │
 └────────────┘
-
+```
 ### Auto-Restart Flow
 
 ontentVersion changes → ConfigMap updated →
